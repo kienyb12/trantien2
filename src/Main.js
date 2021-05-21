@@ -16,6 +16,7 @@ import {
     UploadOutlined,
 } from '@ant-design/icons';
 import routes from './view';
+import About from './About';
 const { Header, Sider, Content } = Layout;
 // const routes = [
 //     {
@@ -112,10 +113,13 @@ class Main extends Component {
                         </HashRouter> */}
                         <BrowserRouter>
                             <Switch>
-                                {routes.map((page, key) => (
+                                {/* {routes.map((page, key) => (
                                     <Route path={page.path} component={page.component} key={key} />
                                 ))}
-                                <Redirect from="/" to="/home" />
+                                <Redirect from="/" to="/home" /> */}
+
+                                <Route exact path='/home' component={Home}></Route>
+                                <Route exact path='/about' component={About}></Route>
                             </Switch>
                         </BrowserRouter>
                     </Content>

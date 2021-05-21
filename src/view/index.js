@@ -5,7 +5,7 @@ import Home from "../Home";
 const pageList = [
     {
       name: 'home',
-      path: '/',
+      path: '/home',
       component: Home,
     },
     {
